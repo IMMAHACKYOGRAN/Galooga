@@ -227,8 +227,9 @@ function collisionDetector () {
 
 function displayScores(ctx, score) {
     ctx.fillStyle = '#FFFFFF';
+    ctx.textAlign = 'center';
     ctx.font = '20px Arial';
-    ctx.fillText("Score: " + score, canvas.width / 2, 50);
+    ctx.fillText("Score: " + score, canvas.width / 2, 20);
 }
 
 function update(time = 0) {
